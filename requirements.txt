@@ -1,0 +1,9 @@
+langchain-cli
+langchain-openai
+langchain-community
+chromadb
+bs4
+pypdf
+python-dotenv
+uvicorn
+fastapi
