@@ -12,7 +12,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- 1. INGESTA DE DATOS ---
-urls = ["https://promtior.ai/"]
+urls = [
+    "https://promtior.ai/",
+    "https://promtior.ai/service",
+    "https://promtior.ai/use-cases"
+]
 docs = []
 
 # Cargar Web
