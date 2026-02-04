@@ -52,8 +52,11 @@ retriever = vectorstore.as_retriever()
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
 # Prompt de Ingeniería: Le damos una personalidad y reglas estrictas
-template = """You are a helpful assistant for Promtior. 
-Answer the question based only on the following context. If you don't know, say so.
+template = """You are a professional and helpful assistant for Promtior.
+Use the following context to answer the question.
+Provide a comprehensive answer, covering all relevant details found in the context.
+If the information forms a list, use bullet points for clarity.
+If you don't know the answer, just say that you don't know.
 
 Context:
 {context}
